@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <meta name="description" content="Página para cadastro dos seus dados pessoais">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="pagina">
+            <!--Parte de cima da página-->
+            <div>
+                <h1>Cadastro de desenvolvedores</h1>
+                <img src="images/4stars.PNG" alt="Imagem de quatro estrelas para contemplar a página">
+                <br><br><br><br><br><br>
+                <p id="fill">Preencha os dados</p>
+                <br><br>
+            </div>
+
+            <!--Criando o formulário-->
+            <form action="">
+                <fieldset>
+                    <!--Nome-->
+                    <div class="bg2">
+                        <label for="lab_nome">Nome</label>
+                        <input type="text" name="nome" id="lab_nome" required>
+                    </div>
+                    <!--Sobrenome-->
+                    <div class="bg2">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                    <!--Data de nascimento-->
+                    <div class="bg2">
+                        <label for="nascimento">Data de nascimento</label>
+                        <input type="date" required>
+                    </div>
+                </fieldset>
+
+                <br>
+                
+                <!--Email-->
+                <div class="bg2">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <br>
+
+                <!--Tipo de desenvolvedor-->
+                <div class="blue">
+                    <label for="devweb">Qual tipo de programador você é?</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="tipo" value="frontend">Front-end
+                    </label>
+                    <label>
+                        <input type="radio" name="tipo" value="back-end">Back-end
+                    </label>
+                    <label>
+                        <input type="radio" name="tipo" value="Fullstack">Fullstack
+                    </label>
+                </div>
+
+                <br>
+
+                <!--Senioridade-->
+                <div>
+                    <label>Qual é o seu nível de senioridade?</label>
+                    <select required class="nivel">
+                        <option selected>Escolher</option>
+                        <option value="junior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Sênior</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!--Curiculo Vitae-->
+                <div>
+                    <label">Você possui algum CV? se sim Adicione</label>
+                        <br>
+                        <input type="file" style="background-color: rgb(236, 206, 167);">
+                </div>
+
+                <br>
+
+                <!--Skills-->
+                <fieldset id="bloco">
+                    <label>Qual das tecnologias você usa?</label>
+                    <br><br>
+                    <label>
+                        <input type="checkbox" name="skills" value="html">Html
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="css">Css
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="javascript">Javascript
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="python">Python
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="php">Php
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="Mysql">Mysql
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="sqlite3">Sqlite3
+                    </label>
+                    <label >
+                        <input type="checkbox" name="skills" value="design">Design UX/UI
+                    </label>
+                </fieldset>
+
+                <br><br>
+
+                <!--Experiência do desenvolvedor-->
+                <div>
+                    <label for="xp">Conte um bocado acerca da sua experiência</label class="bg">
+                    <textarea class="bg" name="xp" id="" cols="40" rows="4"></textarea>
+                    <br>
+                    <button type="submit">Submeter</button>
+                </div>                           
+            </form>
+
+            <br><br><br><br><br>
+
+            <!--Rodapé da página-->
+            <footer>
+                <hr>
+                <p>Renzi Fidele<br>
+                    Maputo, Moçambique<br>
+                    renzifidele2001@gmail.com
+                </p>
+            </footer>
+
+        </div> 
+    </body>
+</html>
+
+
+    

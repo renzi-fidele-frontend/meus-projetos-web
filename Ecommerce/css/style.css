@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+}
+
+body {
+    background-color:rgb(143, 153, 161);
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    padding-bottom: 3em;
+}
+
+header h1 {
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+header i {
+    margin-right: 2em;
+    margin-top: 1em;
+}
+
+#titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-size: 2.4em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-family: cursive;
+    animation: voar 1s ease-in-out alternate-reverse infinite;
+    text-align: center;
+    text-shadow: darkgoldenrod 3px 3px 3px
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main .caixa-produto {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 33%;
+    margin-top: 2.3em;
+    animation: slide ease-in 1s alternate-reverse infinite;
+    transition-duration: 2s;
+}
+
+@keyframes voar {
+    to {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes slide {
+    to {
+        transform: translateX(0.5em);
+        transform: translateX(-0.5em);
+        
+
+    }
+}
+
+
+
+main .caixa-produto .preco-icone {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 40%;
+    background-color: rgb(173, 163, 180);
+    font-size: large;
+    padding: 1em;
+    border-radius: 1em;
+    animation: preco 1s ease-in-out alternate-reverse infinite;
+}
+
+main .caixa-produto .preco-icone:hover {
+    background-color: rgb(241, 151, 32);
+    transition-property: background;
+    transition-timing-function: ease-in-out;
+    transition-timing-function: 1s;
+}
+
+@keyframes preco {
+    to {
+        width: 33%;
+    }
+}
+
+img {
+    margin-inline: 1em;
+    margin: 2em 1em;
+    box-shadow: rgb(21, 24, 20) 0.8em 0.8em 0.8em;
+    transition-property: box-shadow;
+    transition-timing-function: ease;
+    transition-duration: 0.7s;
+ }
+
+ img:hover {
+    box-shadow: rgb(35, 126, 179) -3em 3em 3em;
+    border-radius: 1em;
+
+ }
+
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: rgb(94, 144, 167);
+    margin-top: 7em;
+    font-size: x-large;
+    color: bisque;
+}
+
+footer p {
+    margin-bottom: 1em;
+    font-family: cursive;
+    text-shadow: 3px 3px 2px rgb(175, 175, 162);
+}
+
+footer i {
+    margin: 1em 1em;
+}
+
+#goodbye {
+    padding: 200px 50px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    margin-top: 3em;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-family: monospace;
+    letter-spacing: 0.3em;
+    font-style: oblique;
+}
+
+#goodbye p {
+    font-family: cursive;
+}
+
+@media (max-width: 700px) {
+    #goodbye {
+        font-size: large;
+    }
+}
+
+#carinho {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    min-height: 100vh;
+    background-color: rgb(177, 138, 92);
+}
+
+#carinho h3 {
+    font-size: x-large;
+    letter-spacing: 3px;
+    font-family: cursive;
+}
+
+#carinho header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(228, 183, 128);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#carinho form {
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#carinho input {
+    text-align: end;
+    width: 2.5em;
+    height: 1.5em;
+    font-size: x-large;
+    border-radius: 1em;
+    margin-bottom: 4px;
+    background-color: rgb(206, 189, 164);
+}
+
+#carinho input:focus {
+    background-color: darkorange;
+}
+
+
+#afastar, button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#carinho main button {
+    background-color: cadetblue;
+    padding: 1em;
+    padding-inline: 3em;
+    border-radius: 1em;
+    transition-property: background;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+    border: none;
+    font-size: large;
+}
+
+#carinho button:hover {
+    background-color: rgb(187, 135, 222);
+    font-weight: 900;
+}
+
+#carinho #btn-pagar {
+    margin-top: 3em;
+    font-family: cursive;
+    background-color: cadetblue;
+    padding: 1em;
+    padding-inline: 3em;
+    border-radius: 1em;
+    transition-property: background;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#minimizar {
+    background-color: rgb(231, 207, 139);
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    border-radius: 3em;
+    font-size: large;
+    transition-property: background;
+    transition-timing-function: ease;
+    transition-duration: 0.7s;
+}
+
+#carinho #btn-pagar:hover {
+    background-color: rgb(34, 223, 119);
+    color: rgb(250, 26, 220);
+}
+
+
+
+@keyframes mudaCor {
+    to {
+        background-color: cornsilk;
+    }
+}
+
+.total, #total {
+    text-align: center;
+    font-size: larger;
+}
+
+#linha {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+

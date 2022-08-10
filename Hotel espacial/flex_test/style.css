@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color:rgb(255, 103, 103);
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    
+        
+
+
+    
+}
+
+.article1, .article2, .article3, .article4{
+    background-color: rgb(117, 220, 20);
+    padding: 20px;
+    margin: 5px;
+    flex-shrink:1;
+    width: 500px;
+
+}   
+
+.article1{
+    order: 4;
+    flex-shrink: 2;
+    
+}
+.article2{
+    order: 1;
+}
+.article3{
+    order:2
+}
+.article4{
+    order: 3;}

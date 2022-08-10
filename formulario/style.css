@@ -1,0 +1,121 @@
+/*  Padronizando a página*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*  Definindo a cor de fundo e a fonte do BODY*/
+body{
+    background-color: rgb(202, 145, 122);
+    font-family: cursive;
+}
+
+/*  Configurações da página*/
+#pagina{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rosybrown;
+    margin-top: 1%;
+    padding: 1%;
+    text-align: center;
+    border-radius: 3%;
+
+}
+
+/*  Configurações do título*/
+h1{
+    margin-bottom: 20px;
+    text-shadow: rgb(107, 153, 167) 6px 6px 6px;
+    color: rgb(241, 226, 3);
+}
+
+/*  Rodeando a borda das tags*/
+input, textarea, select, button{
+    border-radius: 6px;
+    margin-bottom: 1em;
+
+}
+
+/*  Configurações dos fieldset*/
+fieldset{
+    width: fit-content;
+    border-radius: 5%;
+    box-shadow: rgb(11, 30, 46) 6px 4px 4px;
+    padding: 1%;
+    border-color: rgb(17, 19, 2);
+    margin:0 auto;
+}
+
+/*  Fazendo com que as tecnologias fiquem em linha*/
+#bloco input{
+    display: inline;
+}
+
+/*  Configurações do campo de texto*/
+textarea{
+    width: 50%;
+    background-color: rgb(236, 206, 167);
+    border-color: rgb(236, 206, 167);
+}
+
+/*  Configurações das bordas*/
+#nivel, .bg2 input, .nivel{
+    border-color: rgb(236, 206, 167);
+    background-color: rgb(236, 206, 167);
+    text-align: end;
+}
+
+/*  Configurações do campo de email*/
+#email{
+    width: 220px;
+}
+
+/*  Configurações do subtítulo*/
+#fill{
+    letter-spacing: 3px;
+    color: rgb(0, 247, 164);;
+    font-weight: 700;
+    font-style: oblique;
+    font-size: large;
+}
+
+/*  Configurações do botão submit*/
+button{
+    margin-left: 3%;
+    padding: 1%;
+    background-color: rgb(255, 136, 127);
+    font-weight: 900;
+    color: rgb(5, 5, 4);
+    padding-inline: 3%;
+    font-size: 1.1em;
+    float: inline-end;
+    position: relative;
+    right: 21%;
+    top: 2%;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+    font-family: cursive;
+    margin: bottom;
+}
+button:hover{
+    background-color: blueviolet;
+    color: chartreuse;
+    font-style: italic;
+}
+
+/*  Configurações dos niveis de senioridade e das skills */
+input[type="radio"], input[type="checkbox"]{
+    margin-left: 15px;
+}
+
+/*  Customizando o efeito do campos de entrada para que fiquem amarelo ao click*/
+input[type="text"], input[type="email"], textarea, .nivel{
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, .nivel:hover{
+    background-color: rgb(233, 231, 95);   
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email template</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color:cadetblue;
+            font-size: larger;
+            font-family:cursive;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3%;
+        }
+
+        img{
+            max-width: 100%;
+        }
+
+    
+
+    
+        header{
+            width: 98%;
+        }
+
+        #logo{
+            float:inline-start;
+            max-width: 35%;
+    
+        }
+
+        #social{
+            float:inline-end;
+            padding-bottom: 5%;
+
+        }
+
+        li{
+            display: inline;
+            text-decoration: none;
+            text-decoration-style: none;
+            list-style-type: none;
+      
+        }
+
+        #pagina{
+            background-color: rgb(0, 255, 255);
+        }
+
+        h1, p{
+            margin:3%;
+        }
+
+        p{
+            font-style: oblique;
+        }
+
+
+        
+        .button{
+            float: right;
+            position: relative;
+            right: 25px;
+            background-color: rgb(223, 226, 12);
+            padding: 2%;
+            border-radius: 10%;
+            margin-bottom: 40px;
+
+        }
+
+        .button a{
+            text-decoration: none;
+            font-size: x-large;
+            color: black;
+            border-radius: 10%;
+            letter-spacing: 3px;  
+            width: 100%;
+        }
+
+        .button a:hover, .button:hover{
+            background-color: darkolivegreen;
+        }
+            
+
+        
+    
+
+        hr{
+            height: 1px;
+            background-color: rgb(8, 8, 8);
+            clear: both;
+            width: 96%;
+            margin: auto;
+        }
+
+        footer{
+            text-align: center;
+            padding-bottom: 3%;
+
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <!--Criando a página centralizanda-->
+    <div id="pagina">
+        <!--Adicionando os ícones ao cabeçalho-->
+        <header>
+            <div id="logo">
+                <img src="images/logo.PNG" alt="Imagem do logo da empresa">
+            </div>
+            <div id="social">
+                <ul>
+                    <li><a target="_blank" href="Facebook.com"><img src="images/fb.png" alt="Imagem do icone de Facebook"> </a></li>
+                    <li><a target="_blank" href="instagram.com"><img src="images/instagram.png" alt="Imagem do icone de instagram"> </a></li>
+                    <li><a href="twitter.com"><img src="images/twitter.png" alt="Imagem do icone de Twitter"> </a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Adicionando a imagem principal-->
+        <div id="main_image">
+            <img src="images/main.jpg" alt="Imagem da anúncio">
+        </div>
+
+        <!--Criando o corpo(texto/anúncio) do email-->
+        <div class="corpo">
+            <h1>Já pensou em dar uma caminhada na praia?</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem illum dicta laborum nobis laboriosam! Quo, autem eveniet maiores, sit harum error dolorem enim mollitia inventore est illo eius quas?
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa blanditiis asperiores sapiente dolorum cumque expedita, animi dicta praesentium nemo maxime quo, quae corporis dolor non nisi? Veniam nihil omnis ipsam!
+            </p>
+        </div>
+
+        <!--Criando o botão para ler mais-->
+        <div class="button">
+            <a href="">Ler mais</a>
+        </div>
+
+        <hr>
+    
+        <footer>
+            <p>
+                RenziSoftwares<br>
+                Maputo, Mozambique<br>
+                renzifidele2001@gmail.com
+            </p>
+        </footer>
+    </div>
+
+
+
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: fantasy;
+    font-size:large;
+    
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 120px;
+    background-color: rgb(78, 167, 167);
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    
+}
+
+#titulo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    padding-left: 3em;
+}
+
+#titulo h1 {
+    margin-left: 0.5em;
+    font-family: cursive;
+    text-shadow: rgb(78, 114, 180) 2px 5px 1px;
+}
+
+
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    font-style: italic;
+}
+
+nav li {
+    margin-inline: 1.5em;
+    list-style: none;
+    background-color: rgb(150, 113, 113);
+    padding: 0.7em;
+    border-radius: 5px;
+    transition-property: background;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+    border: none;
+}
+
+nav li:hover {
+    background-color: brown;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    color: rgb(244, 251, 152);
+}
+
+@media(max-width: 700px) {
+    #titulo {
+        justify-content: center;
+        justify-items: center;
+        padding: 0;
+    }
+
+
+    header {
+        display: flex;
+        flex-flow: column;
+    }
+
+    nav li {
+        padding: 4px;
+        padding-inline: 4px;
+        margin-inline: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+}
+
+#hero {
+    background-image: url('images/hero.jpg');
+    height: 1080px;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: bisque;
+    letter-spacing: 2pt;
+    font-family: sans-serif;
+    flex-flow: column;
+}
+
+#hero a {
+    margin-top: 0.8em;
+    text-decoration: none;
+    color: bisque;
+    background-color:rgb(78, 167, 167);
+    padding: 0.5em 2em;
+    border-radius: 15px;
+    transition-property: background;
+    transition-timing-function: ease;
+    transition-duration: 0.6s;
+    font-weight: 500;
+}
+
+#hero a:hover {
+    background-color: rgb(230, 230, 72);
+    color: black;
+}
+
+#hero h2 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+.leao {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 700px;
+    width: 50px;
+    background-image: url('images/lion.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    color: bisque;
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: 700;
+    letter-spacing: 0.4em;
+}
+
+#motivos {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    font-size: xx-large;
+    font-family: cursive;
+    background-color: rgb(78, 167, 167);
+    padding-bottom: 3em;
+
+}
+
+#fotos {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    color: bisque;
+    background-color: rgb(78, 167, 167);
+    font-family: cursive;
+}
+
+.small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 45%;
+    height: 600px;
+    background-position: center;
+    background-clip: content-box;
+    margin-inline: 1em;
+    margin-bottom: 2em;
+    border-radius: 15px;
+}
+
+.large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    height: 600px;
+    margin-inline: 1em;
+    margin-bottom: 2em;
+    background-position:center;
+    background-clip: content-box;
+    border-radius: 15px;
+}
+
+.small:hover, .large:hover {
+    font-size: x-large;
+    font-weight: 900;
+    color: aqua;
+}
+
+#newsletter {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(78, 124, 167);
+    border: none;
+
+}
+
+#newsletter h2 {
+    font-size: 3em;
+    padding-bottom: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow:rgb(5, 5, 2) 4px 3px 4px;
+    letter-spacing: 3px;
+    color: rgb(9, 255, 255);
+}
+
+#newsletter p {
+    font-size: 2em;
+    padding-bottom: 0.3em;
+    color: rgb(219, 253, 127);
+    margin-bottom: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#newsletter hr {
+    width: 20%;
+    background-color: black;
+    height: 2px;
+    margin-bottom: 4em;
+    box-shadow: rgb(71, 236, 248) 4px 3px 4px;
+}
+
+@media(max-width:700px) {
+    #fotos {
+        flex-flow: column wrap;
+    }
+
+    #fotos div {
+        background-clip: padding-box;
+        padding: 200px 50px;
+    }
+
+    #newsletter p {
+        font-size: large;
+        max-width: 90%;
+    }
+
+    #hero a {
+        font-size: large;
+    }
+}
+
+input {
+    transition-property: background;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+input:focus {
+    background-color: rgb(209, 159, 98);
+    text-align: end;
+}
+
+input, label, button {
+    font-size: 1.2em;
+}
+
+button {
+    padding-inline: 20px;
+    background-color: rgb(62, 69, 97);
+    transition-timing-function: ease;
+    transition-duration: 0.6s;
+    border: none;
+    font-family: cursive;
+    color: blanchedalmond;
+}
+
+button:hover {
+    background-color:rgb(92, 206, 57);
+}
+
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 218, 10);
+    border: none;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 0px;
+}
+
+footer ul li {
+    margin-inline: 10px;
+}
+
+footer p {
+    font-family:cursive;
+    margin-bottom: 3px;
+}
+

@@ -1,0 +1,633 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*  Cabeçalho   */
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 90px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+header #antes {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+}
+
+header #antes p {
+    font-weight: bold;
+    opacity: 0.5;
+    font-size: larger;
+}
+
+header h1 {
+    margin-right: 1em;
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: 600;
+}
+
+header nav {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+header nav li a {
+    margin-inline: 1em;
+    color: #cd2653;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+}
+
+#header2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+#header2 h2 {
+    padding-top: 0.8em;
+    max-width: 70%;
+    font-size: 7rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 4.5em;
+    line-height: 0.8;
+    word-spacing: -30px;
+}
+
+/*Conteudo centralizado*/
+.centralizado {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fundo {
+    background-color: #f5efe0;
+}
+
+#primeiro {
+    position: relative;
+    bottom: 24em;
+}
+
+#lugar-marcante {
+    position: relative;
+    bottom: 3em;
+    max-width: 60%;
+    font-size: 3.8em;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+}
+
+#cards-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 5em;
+}
+
+.card {
+    width: 100%;
+    flex-basis: 45%;
+    height: auto;
+    margin-inline: 30px;
+    margin-bottom: 4em;
+}
+
+.card  img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2em;
+}
+
+.card h3 {
+    font-size: 2.7em;
+    font-family: monospace;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.card p {
+    margin-bottom: 1em;
+}
+
+
+.card a {
+    text-decoration: none;
+    font-size: x-large;
+    color: #cd2653;
+    font-weight: 800;
+    margin-left: 1em;
+}
+
+.card a:hover {
+    text-decoration: underline dotted;
+}
+
+#mais {
+    margin: 0 auto;
+    max-width: 50%;
+    margin-bottom: 5em;
+}
+
+#mais #ant {
+    width: 100%;
+    font-size: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-weight: 800;
+    color: #cd2653;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.06em;
+}
+
+#mais #cont {
+    font-size: large;
+    font-weight: 500;
+    line-height: 1.5em;
+    word-break: break-word;
+}
+
+#mais #cont::first-letter {
+    font-size: 9em;
+    float: left;
+    font-weight: 800;
+    color: #cd2653;
+    letter-spacing: 15px;
+}
+
+#torne-se-membro {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 150px 0px;
+    text-align: center;
+    margin-bottom: 8em;
+}
+
+#torne-se-membro h5 {
+    font-size: 3.5em;
+    max-width: 50%;
+    line-height: 1.1em;
+    font-weight: 900;
+    animation: brilhar 1s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes brilhar {
+    from {
+        color: black;
+    } to {
+        color: blueviolet;
+    }
+
+}
+
+#torne-se-membro p {
+    max-width: 50%;
+    margin-block: 2em;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#torne-se-membro a {
+    text-decoration: none;
+    padding-block: 0.7em;
+    padding-inline: 1em;
+    background-color: #cd2653;
+    color: white;
+    font-size: x-large;
+    font-weight: 900;
+    transition-property: background;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#torne-se-membro a:hover {
+    background-color: rgb(160, 231, 248);
+}
+
+#espera {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 1em;
+    font-weight: 900;
+    text-shadow: rgb(180, 250, 255) 3px 3px 2px;
+    animation: lado 1s alternate-reverse infinite;
+}
+
+@keyframes lado {
+    from {
+        transform: translateX(7px);
+    } to {
+        transform: translateX(-7px);
+    }
+}
+
+#ultima {
+    margin-bottom: 10em;
+}
+
+#icones {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: first baseline;
+    list-style: none;
+    margin-block: 2em;
+}
+
+#antes-do-rodape hr {
+    opacity: 0.3;
+}
+
+#icones li {
+    padding: 0.7em;
+    background-color: #cd2653;
+    margin-inline: 0.7em;
+    border-radius: 50%;
+
+}
+
+#icones svg {
+    fill: rgb(255, 255, 255);
+    padding: 0;
+}
+
+
+#sobre-o-site {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-block: 5em;
+    
+}
+
+#sobre-o-site #sobre, #sobre-o-site #horas {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#sobre-o-site #sobre h5, #sobre-o-site #encontre-nos h5 {
+    font-size: 2.8em;
+    margin-bottom: 0.7em;
+    font-weight: 900;
+}
+
+#sobre-o-site #sobre p {
+    max-width: 80%;
+}
+
+#sobre-o-site #encontre-nos h6 {
+    font-size: larger;
+    margin-bottom: 4px;
+}
+
+#sobre-o-site #encontre-nos #endereco, #sobre-o-site #encontre-nos #horas {
+    margin-bottom: 1.3em;
+}
+
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-block: 1em;
+    align-items: baseline;
+}
+
+footer h1 {
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: 600;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #cd2653;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+/*-------------------------Responsividade Moobile------------*/
+@media (max-width: 703px) {
+    .centralizado {
+        max-width: fit-content;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    header {
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    header #antes {
+        flex-flow: column;
+        margin-block: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header2 h2 {
+        margin-top: 1em;
+        font-size: 2rem;
+        word-spacing: normal;
+    }
+
+    #antes-primeiro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #primeiro {
+        position: relative;
+        bottom: 4em;
+        width: fit-content;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    #lugar-marcante {
+        position:static;
+        font-size: larger;
+        margin-bottom: 5em;
+    }
+
+    #cards-container {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .card {
+        margin-inline: 0;
+        flex-basis: 95%;
+    }
+
+    .card img {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 1.1em;
+    }
+
+    .card h3 {
+        font-size: x-large;
+        padding-bottom: 0.6em;
+        margin-left: 5px;
+    }
+
+    .card p {
+        margin-bottom: 0.5em;
+        margin-left: 5px;
+    }
+
+    .card a {
+        font-size: large;
+    }
+
+    #mais #ant {
+        font-size: larger;
+        line-height: normal;
+    }
+
+    #mais #cont {
+        width: 100%;;
+    }
+
+    #mais #cont::first-letter {
+        font-size: 5em;
+    }
+
+    #torne-se-membro {
+        padding: 100px 0px; 
+    }
+
+    #torne-se-membro h5 {
+        font-size: x-large;
+    }
+
+    #torne-se-membro a {
+        font-size: large;
+    }
+
+    #espera {
+        font-size: larger;
+    }
+
+    #ultima {
+        width: 100%;
+        height: fit-content;
+    }
+
+    #icones {
+        margin-block: 0.9em;
+    }
+
+    #sobre-o-site {
+        margin-block: 2.6em;
+        justify-content: space-around;
+        margin-left: 5px;
+    }
+
+    #sobre-o-site #sobre p {
+        font-size: small;
+    }
+
+    #sobre-o-site #sobre h5, #sobre-o-site #encontre-nos h5 {
+        font-size: 1.2em;
+    }
+
+    #sobre-o-site #encontre-nos h6 {
+        font-size: 1em;
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    footer a {
+        font-size: larger;
+    }
+}
+
+
+/*----------------------------Página - Sobre--------------------------*/
+#pagina-sobre #header-sobre {
+    margin-block: 1em;
+    font-size: 6em;
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+#pagina-sobre .centralizado #main-sobre #sobre-o-criador h2 {
+    padding-top: 1em;
+}
+
+#pagina-sobre .centralizado #main-sobre #sobre-o-criador #nome {
+    font-weight: bolder;
+    margin-top: 1em;
+}
+
+#pagina-sobre .centralizado #main-sobre #sobre-o-criador p {
+    max-width: 50%;
+}
+
+#pagina-sobre .fundo .centralizado #main-sobre {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 3em;
+    margin-top: 4em;
+}
+
+#pagina-sobre .fundo .centralizado hr {
+    opacity: 0.5;
+    width: 65%;
+    margin-bottom: 2em;
+}
+
+
+#pagina-sobre .fundo .centralizado #skills-container .card {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+}
+
+
+#pagina-sobre .fundo .centralizado #skills-container .card img {
+    height: 100px;
+    width: auto;
+}
+
+#pagina-sobre .fundo .centralizado #skills-container .card .cont1 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#pagina-sobre .fundo .centralizado #skills-container .card .cont1 h4 {
+    margin-left: 1em;
+    font-size: larger;
+}
+
+#pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador2 h2 {
+    margin-bottom: 1em;
+    font-size: xx-large;
+    text-shadow: #26cdcd 1px 3px 3px;
+    transition-property: color;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+    animation: mudarCor 0.6s ease-out infinite alternate-reverse;
+}
+
+@keyframes mudarCor {
+    from {
+        color: yellow;
+    } to {
+        color: purple;
+    }
+}
+
+
+#pagina-sobre .fundo .centralizado #all-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#pagina-sobre .fundo .centralizado #all-container img {
+    align-self: center;
+}
+
+/*-----------------Responsividade mobile página sobre-----------------*/
+@media (max-width: 703px) {
+    #pagina-sobre .fundo .centralizado #all-container {
+        flex-flow: column;
+    }
+
+    #pagina-sobre #header-sobre {
+        font-size: xx-large;
+    }
+
+    #pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador h2 {
+        font-size: larger;
+    }
+
+    #pagina-sobre .fundo .centralizado #main-sobre {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #pagina-sobre .fundo .centralizado hr {
+        width: 100%;
+    }
+
+    #pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador {
+        text-align: center;    
+    }
+
+    #pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador h2 {
+        margin-block: 1em;
+    }
+
+    #pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador2 h2 {
+        font-size: larger;
+    }
+
+    #pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador2 img {
+        height: 230px;
+    }
+
+    #pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador p {
+        margin: 0 auto;
+    }
+
+    #pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador2 {
+        margin-top: 4em;
+    }
+
+    #pagina-sobre .fundo .centralizado #main-sobre #sobre-o-criador2 img {
+
+        
+}

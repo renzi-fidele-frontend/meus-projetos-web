@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#hero {
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-clip:border-box;
+}
+
+
+
+#cabecalho {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1em 1em;
+}
+
+#cabecalho h1 {
+    font-family:monospace;
+    text-decoration: underline dotted rgb(255, 145, 0);
+    position: relative;
+    right: 2.8em;
+    
+}
+
+#cabecalho ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+#cabecalho ul li a, ul i{
+    text-decoration: none;
+    color: black;
+    margin-inline: 9px;
+}
+
+#cabecalho ul li a {
+    font-family: cursive;
+    font-weight: 900;
+}
+
+
+#descricao {
+    padding: 150px 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#descricao h2 {
+    font-size: 4em;
+}
+
+#descricao p {
+    font-size:3em;
+    font-weight: lighter;
+    margin-top: 1em;
+}
+
+#descricao a {
+    text-decoration: none;
+    padding: 1em;
+    padding-inline: 2em;    
+    color: black;
+    background-color: palevioletred;
+    border-radius: 1em;
+    margin-top: 1em;
+    transition-property: background;
+    transition-timing-function: ease;
+    transition-duration: 0.6s;
+}
+
+#descricao a:hover {
+    background-color: chocolate;
+    font-weight: 900;
+}
+
+
+/*------------------------------------Parte 1-----------------------------------------*/
+#Parte1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#lado_esquerdo1 {
+    background-color: rgb(234, 160, 111);
+    width: 100%;
+    font-size: 2em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Parte1 #lado_esquerdo1 p, #Parte1 #lado_esquerdo1 ul {
+    margin-left: 25px;
+    margin-top: 13px;
+} 
+
+#Parte1 #lado_esquerdo1 p {
+    margin-top: 1em;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3em;
+    text-align: right;
+    font-weight: 500;
+    animation: mudaCor1 0.5s ease alternate-reverse infinite;
+}
+
+@keyframes mudaCor1 {
+    from {
+        transition-property: color;
+        color: rgb(162, 0, 255);
+        text-shadow: 1px 1px 1px black;
+    }
+    to {
+        color: rgb(255, 146, 22);
+        text-shadow: -2px -2px 1px rgb(73, 78, 109);
+    }
+}
+
+#Parte1 #lado_esquerdo1 ul {
+    list-style:lower-alpha;
+    font-family: cursive;
+    font-size: 1em;
+    margin-top: 2em;
+    text-align: end;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*------------------------------------Parte 2-----------------------------------------*/
+#parte2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+
+#parte2 #lado_direito2 {
+    background-color: rgb(245, 177, 176);
+    width: 100%;
+    text-align: left;
+    justify-content: space-around;
+}
+
+#parte2 #lado_direito2 p {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3em;
+    font-weight: 500;
+    animation: mudaCor2 0.5s ease alternate-reverse infinite;
+    font-size: 5em;
+}
+
+@keyframes mudaCor2 {
+    from {
+        transition-property: color;
+        color: rgb(196, 57, 142);
+        text-shadow: 1px 1px 1px black;
+    }
+    to {
+        color: rgb(103, 253, 2);
+        text-shadow: -2px -2px 1px rgb(73, 78, 109);
+    }
+}
+
+#parte2 #lado_direito2 ul {
+    list-style:lower-alpha;
+    font-family: cursive;
+    font-size: 2em;
+    margin-top: 2em;
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 3em;
+    font-weight: 300;
+}
+
+/*------------------------------------Parte 3-----------------------------------------*/
+#parte3 {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#parte3 #lado_esquerdo3 {
+    background-color: rgb(59, 176, 209);
+    width: 100%;
+    font-size: 2em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#parte3 #lado_esquerdo3 p {
+    margin-top: 1em;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3em;
+    text-align: right;
+    font-weight: 500;
+    animation: mudaCor3 0.5s ease alternate-reverse infinite;
+}
+
+@keyframes mudaCor3 {
+    from {
+        transition-property: color;
+        color: cyan;
+        text-shadow: 1px 1px 1px black;
+    }
+    to {
+        color: rgb(239, 255, 22);
+        text-shadow: -2px -2px 1px rgb(73, 78, 109);
+    }
+}
+
+#parte3 #lado_esquerdo3 ul {
+    list-style:lower-alpha;
+    font-family: cursive;
+    font-size: 1em;
+    margin-top: 2em;
+    text-align: end;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*------------------------------------Parte 4-----------------------------------------*/
+#parte4 {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#parte4 #lado_direito4 {
+    background-color: rgb(167, 163, 161);
+    width: 100%;
+    text-align: left;
+    justify-content: space-around;
+}
+
+#parte4 #lado_direito4 p {
+    margin-top: 2em;
+    margin-left: 0.5em;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3em;
+    font-weight: 500;
+    animation: mudaCor4 0.5s ease alternate-reverse infinite;
+    font-size: 5em;
+}
+
+@keyframes mudaCor4 {
+    from {
+        transition-property: color;
+        color: cyan;
+        text-shadow: 1px 1px 1px black;
+    }
+    to {
+        color: rgb(239, 255, 22);
+        text-shadow: -2px -2px 1px rgb(73, 78, 109);
+    }
+}
+
+#parte4 #lado_direito4 ul {
+    list-style:lower-alpha;
+    font-family: cursive;
+    font-size: 2.4em;
+    margin-top: 2em;
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 3em;
+    font-weight: 300;
+}
+
+/*----------------------------------Responsividade Mobile------------------------------*/
+@media (max-width: 702px) {
+    #cabecalho a {
+        display: none;
+    }
+
+    #descricao h2 {
+        font-size: x-large;
+    }
+
+    #descricao p {
+        font-size: larger;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    #Parte1 #lado_esquerdo1 p, #parte2 #lado_direito2 p, #parte3 #lado_esquerdo3 p, #parte4 #lado_direito4 p {
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+        padding-top: 6px;
+    }
+
+    #Parte1 #lado_esquerdo1 ul, #parte2 #lado_direito2 ul, #parte3 #lado_esquerdo3 ul, #parte4 #lado_direito4 ul {
+        font-size: large;
+        text-align: center;
+        margin: 0;
+        margin-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    #Parte1, #parte3 {
+        flex-flow: column-reverse nowrap;
+    }
+
+    #Parte1 #lado_esquerdo1 p, #parte3 #lado_esquerdo3 p {
+        font-size: 20px;
+    }
+
+    #parte2, #parte4 {
+        flex-flow: column nowrap;
+    }
+
+    main ul {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    main ul li {
+        margin-bottom: 6px;
+    }
+}
